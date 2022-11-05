@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Ticket</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+
+    <style>
+      @import url(//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
+      * {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .ticket-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .match-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .match-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .match-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .match-item:first-child {
+        margin-right: 1rem;
+      }
+
+      .match-item:last-child {
+        margin-left: 1rem;
+      }
+
+      .match-item img {
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .vs {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .match-time {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: uppercase;
+      }
+
+      .match-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .table {
+        margin-bottom: 1rem;
+        color: #18191b;
+        vertical-align: top;
+      }
+
+      tbody,
+      td,
+      tfoot,
+      th,
+      thead,
+      tr {
+        border: 0 solid;
+        border-color: inherit;
+      }
+
+      tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+      }
+
+      th {
+        text-align: inherit;
+        font-weight: 600;
+      }
+
+      .table-borderless > :not(caption) > * > * {
+        border-bottom-width: 0;
+        padding: 0.2rem;
+      }
+
+      .qrcode {
+        width: 100%;
+        height: 200px;
+      }
+
+      .qrcode img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .app-name {
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="ticket-container">
+      <div class="match-container">
+        <div class="match-content">
+          <div class="match-item d-flex flex-column align-items-center justify-content-center">
+            <img src="http://127.0.0.1:8000/uploads/1/Duhok_SC_logo.png" />
+            <span>Duhok SC</span>
+          </div>
+          <span class="vs">VS</span>
+          <div class="match-item">
+            <img src="http://127.0.0.1:8000/uploads/13/Brayati_fc.jpg" />
+            <span>Brayati FC</span>
+          </div>
+        </div>
+
+        <div class="match-time">
+          <span class="h3">SATURDAY</span>
+          <span class="mt-1">12:00 AM</span>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="match-info">
+        <table class="table-borderless mb-0 table">
+          <tbody>
+            <tr>
+              <th scope="row" style="width: 400px">#</th>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th scope="row" style="width: 400px">Serial Number</th>
+              <td>DUKZEV-051100001</td>
+            </tr>
+            <tr>
+              <th scope="row" style="width: 400px">Price</th>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <th scope="row" style="width: 400px">Category</th>
+              <td>Gold</td>
+            </tr>
+            <tr>
+              <th scope="row" style="width: 400px">Category</th>
+              <td>Longer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <hr />
+
+      <div class="qrcode">
+        <img src="http://localhost/club-ticket-system/public/qrcodes/DUK_ZEV_05_11_00022.svg" class="image-fluid" alt="qrcode" />
+      </div>
+
+      <p class="app-name">
+        Thanks,<br />
+        DuhoK SC
+      </p>
+    </div>
+  </body>
+</html>
