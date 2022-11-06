@@ -14,9 +14,12 @@
       }
 
       .ticket-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 1rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
       }
 
       .match-container {
@@ -39,21 +42,23 @@
       }
 
       .match-item:first-child {
-        margin-right: 1rem;
+        margin-right: 1.5rem;
       }
 
       .match-item:last-child {
-        margin-left: 1rem;
+        margin-left: 1.5rem;
       }
 
       .match-item img {
-        width: 4rem;
-        height: 4rem;
+        margin-right: .5rem;
+        width: 3rem;
+        height: 3rem;
       }
 
       .vs {
         font-size: 1rem;
         font-weight: 600;
+        color: #333;
       }
 
       .match-time {
@@ -64,16 +69,11 @@
         text-transform: uppercase;
       }
 
-      .match-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
       .table {
         margin-bottom: 1rem;
         color: #18191b;
         vertical-align: top;
+        width: 100%;
       }
 
       tbody,
@@ -93,7 +93,7 @@
       }
 
       th {
-        text-align: inherit;
+        text-align: left;
         font-weight: 600;
       }
 
@@ -136,7 +136,7 @@
 
         <div class="match-time">
           <span class="h3">SATURDAY</span>
-          <span class="mt-1">12:00 AM</span>
+          <span class="mt-1">5 NOV - 12:00 AM</span>
         </div>
       </div>
 
@@ -146,23 +146,23 @@
         <table class="table-borderless mb-0 table">
           <tbody>
             <tr>
-              <th scope="row" style="width: 400px">#</th>
+              <th scope="row" style="width: 335px">#</th>
               <td>1</td>
             </tr>
             <tr>
-              <th scope="row" style="width: 400px">Serial Number</th>
+              <th scope="row" style="width: 335px">Serial Number</th>
               <td>DUKZEV-051100001</td>
             </tr>
             <tr>
-              <th scope="row" style="width: 400px">Price</th>
+              <th scope="row" style="width: 335px">Price</th>
               <td>2000</td>
             </tr>
             <tr>
-              <th scope="row" style="width: 400px">Category</th>
+              <th scope="row" style="width: 335px">Category</th>
               <td>Gold</td>
             </tr>
             <tr>
-              <th scope="row" style="width: 400px">Category</th>
+              <th scope="row" style="width: 335px">Category</th>
               <td>Longer</td>
             </tr>
           </tbody>
