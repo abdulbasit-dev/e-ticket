@@ -179,11 +179,13 @@
         Thanks,<br />
         DuhoK SC
       </p>
+      <p id="deviceRes"></p>
     </div>
 
     <script>
       console.log(window.screen.availHeight);
       console.log(window.screen.availWidth);
+      document.getElementById('deviceRes').innerHTML = window.screen.availHeight + 'x' + window.screen.availWidth;
     </script>
   </body>
 </html>
