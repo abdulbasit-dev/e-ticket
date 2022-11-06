@@ -95,6 +95,7 @@
       th {
         text-align: left;
         font-weight: 600;
+        width: 335px;
       }
 
       .table-borderless > :not(caption) > * > * {
@@ -115,6 +116,40 @@
 
       .app-name {
         margin: 0 auto;
+      }
+
+      /* media query */
+      @media (min-width: 521px) and (max-width: 550px) {
+        th {
+          width: 300px;
+        }
+      }
+
+      @media (min-width: 401px) and (max-width: 520px) {
+        th {
+          width: 230px;
+        }
+      }
+
+      @media (min-width: 386px) and (max-width: 400px) {
+        th {
+          width: 180px;
+        }
+      }
+
+      /* media query */
+      @media (max-width: 386px) {
+        body {
+          background: red;
+        }
+        .match-item img {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+
+        th {
+          width: 165px;
+        }
       }
     </style>
   </head>
@@ -146,23 +181,23 @@
         <table class="table-borderless mb-0 table">
           <tbody>
             <tr>
-              <th scope="row" style="width: 335px">#</th>
+              <th scope="row">#</th>
               <td>1</td>
             </tr>
             <tr>
-              <th scope="row" style="width: 335px">Serial Number</th>
+              <th scope="row">Serial Number</th>
               <td>DUKZEV-051100001</td>
             </tr>
             <tr>
-              <th scope="row" style="width: 335px">Price</th>
+              <th scope="row">Price</th>
               <td>2000</td>
             </tr>
             <tr>
-              <th scope="row" style="width: 335px">Category</th>
+              <th scope="row">Category</th>
               <td>Gold</td>
             </tr>
             <tr>
-              <th scope="row" style="width: 335px">Category</th>
+              <th scope="row">Category</th>
               <td>Longer</td>
             </tr>
           </tbody>
