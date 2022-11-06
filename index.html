@@ -67,7 +67,6 @@
         flex-direction: column;
         align-items: center;
         text-transform: uppercase;
-    
       }
 
       .table {
@@ -128,28 +127,44 @@
 
       @media (min-width: 401px) and (max-width: 520px) {
         th {
-          width: 230px;
+          width: 220px;
         }
       }
 
-      @media (min-width: 386px) and (max-width: 400px) {
+      @media (min-width: 401px) and (max-width: 440px) {
         th {
-          width: 180px;
+          width: 185px;
         }
       }
 
-      /* media query */
-      @media (max-width: 386px) {
-        body {
-          background: red;
+      @media (min-width: 360px) and (max-width: 400px) {
+        th {
+          width: 160px;
         }
+
         .match-item img {
           width: 2.5rem;
           height: 2.5rem;
         }
 
+        .match-item span {
+          font-size: 0.9rem;
+        }
+      }
+
+      /* media query */
+      @media (max-width: 360px) {
+        .match-item img {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .match-item span {
+          font-size: 0.9rem;
+        }
+
         th {
-          width: 165px;
+          width: 130px;
         }
       }
     </style>
@@ -172,10 +187,8 @@
       </div>
 
       <div class="match-time">
-        
-          <span class="h3">SATURDAY</span>
-          <span class="mt-1">5 NOV - 12:00 AM</span>
-       
+        <span class="h3">SATURDAY</span>
+        <span class="mt-1">5 NOV - 12:00 AM</span>
       </div>
 
       <hr />
